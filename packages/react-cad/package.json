@@ -1,0 +1,61 @@
+{
+  "name": "@jordyvd/react-cad",
+  "version": "0.0.0",
+  "type": "module",
+  "peerDependencies": {
+    "react": "^19.2.6"
+  },
+  "dependencies": {
+    "manifold-3d": "^3.4.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "react": "^19.2.6"
+  },
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./2d": {
+      "types": "./dist/2d.d.ts",
+      "default": "./dist/2d.js"
+    },
+    "./3d": {
+      "types": "./dist/3d.d.ts",
+      "default": "./dist/3d.js"
+    },
+    "./layout": {
+      "types": "./dist/layout.d.ts",
+      "default": "./dist/layout.js"
+    },
+    "./operations": {
+      "types": "./dist/operations.d.ts",
+      "default": "./dist/operations.js"
+    },
+    "./runtime": {
+      "types": "./dist/core.d.ts",
+      "default": "./dist/core.js"
+    },
+    "./geometry": {
+      "types": "./dist/geometry.d.ts",
+      "default": "./dist/geometry.js"
+    },
+    "./export": {
+      "types": "./dist/export.d.ts",
+      "default": "./dist/export.js"
+    },
+    "./jsx-runtime": {
+      "types": "./dist/jsx-runtime.d.ts",
+      "default": "./dist/jsx-runtime.js"
+    },
+    "./jsx-dev-runtime": {
+      "types": "./dist/jsx-dev-runtime.d.ts",
+      "default": "./dist/jsx-dev-runtime.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  }
+}
